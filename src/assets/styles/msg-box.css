@@ -1,0 +1,86 @@
+.msg-box {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+}
+
+.msg-box-mime {
+    text-align: right;
+}
+
+.head-icon-mime {
+    right: 1rem;
+}
+
+.sender-mime {
+    margin-left: unset;
+    margin-right: 4.5rem;
+    text-align: right !important;
+}
+
+.msg-mime {
+    margin-left: unset !important;
+    margin-right: 5rem !important;
+    background-color: #37a0c8 !important;
+}
+
+.msg-box #head-icon {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: #ccc 1px solid;
+}
+
+.msg-box .default-icon {
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+    color: #3eaf7c;
+    display: block;
+}
+
+.msg-box #sender {
+    margin-left: 4rem;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #777;
+    display: block;
+}
+
+.msg-box #msg {
+    max-width: 50%;
+    line-height: 1.5rem;
+    margin-left: 4.5rem;
+    margin-top: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: #3eaf7c;
+    color: #eee;
+    font-size: 0.9rem;
+    display: inline-block;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.msg-box #icon-loading {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0;
+    vertical-align: bottom;
+    margin-bottom: 0.3rem;
+}
+
+.msg-box .rotate {
+    animation: loading linear 1.5s infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

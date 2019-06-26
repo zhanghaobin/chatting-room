@@ -1,0 +1,99 @@
+.rich-text-editor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+.rich-text-editor #tool-bar {
+    position: relative;
+    width: 100%;
+    height: 2.8rem;
+    padding-left: 1.5rem;
+    padding-top: 0.4rem;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.rich-text-editor #emoji-picker {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+}
+
+.rich-text-editor #emoji {
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    background: url("./../images/icon-emoji-normal.png") no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rich-text-editor #emoji:hover {
+    background-image: url("./../images/icon-emoji-hover.png");
+}
+
+.rich-text-editor #image {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    margin-left: 0.25rem;
+    vertical-align: top;
+    background: url("./../images/icon-image-normal.png") no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rich-text-editor #image:hover {
+    background-image: url("./../images/icon-image-hover.png");
+}
+
+.rich-text-editor #image-selector {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.rich-text-editor .editor {
+    position: absolute;
+    width: 100%;
+    top: 2.8rem;
+    bottom: 3rem;
+    line-height: 1.5rem;
+    text-align: left;
+    outline: none;
+    padding: 0.25rem;
+    color: #666;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+}
+
+.rich-text-editor #confirm {
+    position: absolute;
+    outline: none;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    color: #eee;
+    font-size: 1rem;
+    border-radius: 5px;
+    bottom: 0.5rem;
+    right: 2rem;
+    background-color: #3E967C;
+    display: block;
+}
+
+.rich-text-editor #confirm:hover {
+    background-color: #3eaf7c;
+}

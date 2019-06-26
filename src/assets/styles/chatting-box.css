@@ -1,0 +1,108 @@
+.chatting-box {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    background-color: #f5f5f5;
+}
+
+.chatting-box #information {
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    border-right: 1px #ccc solid;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.chatting-box #information > header {
+    height: 8%;
+    padding: 7rem 0;
+    box-sizing: content-box;
+    background-color: #3eaf7c;
+}
+
+.chatting-box #information #icon-information {
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.chatting-box #title-information {
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    color: #ddd;
+    font-style: italic;
+    display: inline-block;
+}
+
+.chatting-box #information > main {
+    padding-top: 4.5rem;
+}
+
+.chatting-box #information > main > p {
+    line-height: 2rem;
+    color: #555;
+}
+
+.chatting-box #main-part {
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.chatting-box > #main-part >  header {
+    height: 7%;
+    padding: 1.5% 0;
+    box-sizing: content-box;
+    background-color: #3eaf7c;
+    z-index: 996;
+}
+
+.chatting-box #icon-main {
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.chatting-box #title-main {
+    height: 100%;
+    vertical-align: middle;
+    line-height: 1.3rem;
+    margin-left: 0.8rem;
+    font-size: 1.3rem;
+    color: #ddd;
+    display: inline-block;
+}
+
+.chatting-box > #main-part > main {
+    height: 65%;
+    overflow-y: scroll;
+    z-index: 995;
+}
+
+.chatting-box > #main-part > footer {
+    width: 100%;
+    height: 25%;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .chatting-box #information {
+        display: none;
+    }
+
+    .chatting-box #main-part {
+        width: 100%;
+    }
+}
+
+/deep/ .msg-box .emoji {
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+}
+
+/deep/ .msg-box .image {
+    max-width: 100%;
+}

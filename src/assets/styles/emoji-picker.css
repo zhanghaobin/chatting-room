@@ -1,0 +1,15 @@
+.emoji-picker {
+    max-width: 100%;
+    white-space: normal;
+    padding: 0.5rem;
+    max-height: 20rem;
+    text-align: left;
+    overflow-y: scroll;
+    background-color: #eee;
+}
+
+.emoji-picker > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
